@@ -1,0 +1,12 @@
+.vscode
+.obsidian
+.DS_Store
+
+*.dSYM
+*.o
+
+bin
+private
+node_modules
+__pycache__ 
+
