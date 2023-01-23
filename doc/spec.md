@@ -4,4 +4,4 @@
 - Reputation Flow
 - Rumor spread test
 
-- Node.js
+- Python
