@@ -23,7 +23,7 @@ nx.draw_circular(**{
   'arrowsize': 1,
   'arrowstyle': '->'
 })
-plt.savefig('output/bitcoinalpha.svg', **{
+plt.savefig('output/bitcoinalpha_show.svg', **{
   'format': 'svg',
   'dpi': 800
 })
