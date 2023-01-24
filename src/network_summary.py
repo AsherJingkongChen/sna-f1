@@ -44,7 +44,9 @@ D = {
       [['id_1', 'id_2']].to_numpy(),
 }
 
-for subject, data in D.items():
-  stats(subject, data)
-  output_csv(subject, D[subject])
-  output_svg(subject)
+# for subject, data in D.items():
+#   stats(subject, data)
+#   output_csv(subject, D[subject])
+#   output_svg(subject)
+
+output_svg_all(D.keys())

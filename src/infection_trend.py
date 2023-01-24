@@ -77,9 +77,39 @@ def output_svg(subject):
   plt.ylabel('Infected ratio (average)')
   plt.xticks(data['X'])
   plt.yticks(np.linspace(0, 1, 10 + 1))
-  plt.title(f'Infection mode on {subject}')
+  plt.title(f'Infection trend on {subject}')
 
   plt.savefig(f'output/infection_{subject}.svg', **{
+    'format': 'svg',
+    'dpi': 800
+  })
+
+def output_svg_all(subjects):
+  plt.figure(figsize=(14, 7))
+
+  colors = []
+  for subject in subjects:
+    data = read_csv(f'output/infection_{subject}.csv')
+    colors.append((
+      random.uniform(0, 1),
+      random.uniform(0, 1),
+      random.uniform(0, 1)
+    ))
+    plt.plot(
+      data['X'], data['Y'],
+      color=colors[-1],
+      linewidth=2,
+      label=subject
+    )
+    plt.xticks(data['X'])
+
+  plt.grid(which='both', alpha=0.3)
+  plt.legend()
+  plt.xlabel('Infection threshold')
+  plt.ylabel('Infected ratio (average)')
+  plt.yticks(np.linspace(0, 1, 10 + 1))
+  plt.title(f'Infection trend on all')
+  plt.savefig(f'output/infection_all.svg', **{
     'format': 'svg',
     'dpi': 800
   })
