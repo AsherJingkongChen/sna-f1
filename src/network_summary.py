@@ -46,12 +46,5 @@ D = {
 
 for subject, data in D.items():
   stats(subject, data)
-
-output_csv('bitcoinalpha', D['bitcoinalpha'])
-output_csv('facebook', D['facebook'])
-output_csv('instagram', D['instagram'])
-output_csv('org_l', D['org_l'])
-output_csv('org_m', D['org_m'])
-output_csv('org_s', D['org_s'])
-output_csv('slashdot', D['slashdot'])
-output_csv('github', D['github'])
+  output_csv(subject, D[subject])
+  output_svg(subject)
