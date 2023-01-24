@@ -2,20 +2,19 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import numpy as np
 import random
+from pandas import DataFrame, read_csv
 from collections import Counter
 
-def infection_summary(D, subject):
+def output_csv(subject, data):
   random.seed(255)
-  sample_count = 50
+  sample_count = 30
 
   # build graph
   #
   # check the graph scale
   #
   G = nx.Graph()
-  G.add_edges_from(D)
-  stats = { 'node_count': len(G.nodes) }
-  print(stats)
+  G.add_edges_from(data)
 
   # X: infection threshold
   # Y: average infected ratio
@@ -66,15 +65,19 @@ def infection_summary(D, subject):
     Y.append(y)
     print(y)
 
+  DataFrame(data={'X': X, 'Y': Y}) \
+    .to_csv(f'output/infection_{subject}.csv')
+
+def output_svg(subject):
+  data = read_csv(f'output/infection_{subject}.csv')
   plt.figure(figsize=(14, 7))
-  plt.plot(X, Y, color='#B80', linewidth=2)
+  plt.plot(data['X'], data['Y'], color='#B80', linewidth=2)
   plt.grid(which='both', alpha=0.3)
   plt.xlabel('Infection threshold')
   plt.ylabel('Infected ratio (average)')
-  plt.xticks(X)
+  plt.xticks(data['X'])
   plt.yticks(np.linspace(0, 1, 10 + 1))
-  plt.title(f'Infection mode on {subject}, '\
-            f'node count = {stats["node_count"]}')
+  plt.title(f'Infection mode on {subject}')
 
   plt.savefig(f'output/infection_{subject}.svg', **{
     'format': 'svg',
