@@ -13,8 +13,9 @@ def stats(subject, data):
           'node_count': len(G.nodes),
           'edge_count': len(G.edges),
           'avg_cluster': nx.average_clustering(G),
+          'avg_degree': np.mean(np.array([v for k, v in nx.degree(G)])),
           'density': nx.density(G),
-          'avg_degree': np.mean(np.array([v for k, v in nx.degree(G)]))
+          # 'avg_conn': nx.average_node_connectivity(G)
         }.items()
     ])
   )

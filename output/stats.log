@@ -1,0 +1,97 @@
+bitcoinalpha
+node_count: 3782
+edge_count: 14123
+avg_cluster: 0.1766757389650334
+avg_degree: 7.46853516657853
+density: 0.0019752803931707297
+
+facebook
+node_count: 4039
+edge_count: 88233
+avg_cluster: 0.6054912072684573
+avg_degree: 43.69051745481555
+density: 0.010819840875387704
+
+instagram
+node_count: 70409
+edge_count: 865882
+avg_cluster: 0.12830556164611326
+avg_degree: 24.59577610816799
+density: 0.00034933212288614917
+
+org_l
+node_count: 5793
+edge_count: 30753
+avg_cluster: 0.17068434742781244
+avg_degree: 10.61729673744174
+density: 0.0018330968124036153
+
+org_m
+node_count: 1429
+edge_count: 19357
+avg_cluster: 0.42115170748523817
+avg_degree: 27.091672498250524
+density: 0.01897175945255639
+
+org_s
+node_count: 320
+edge_count: 2369
+avg_cluster: 0.4926101751067942
+avg_degree: 14.80625
+density: 0.04641457680250784
+
+slashdot
+node_count: 77350
+edge_count: 468554
+avg_cluster: 0.05491253890371799
+avg_degree: 12.115164835164835
+density: 0.00015662988319389823
+
+github
+node_count: 37700
+edge_count: 289003
+avg_cluster: 0.16753704480107323
+avg_degree: 15.331724137931035
+density: 0.0004066878203117068
+
+ws_graph_k15
+node_count: 2500
+edge_count: 17500
+avg_cluster: 0.5044508144693279
+avg_degree: 14.0
+density: 0.0056022408963585435
+
+ws_graph_k25
+node_count: 2500
+edge_count: 30000
+avg_cluster: 0.52516035635398
+avg_degree: 24.0
+density: 0.009603841536614645
+
+ws_graph_k35
+node_count: 1000
+edge_count: 17000
+avg_cluster: 0.529942532347451
+avg_degree: 34.0
+density: 0.03403403403403404
+
+gnp_p0.015
+node_count: 1000
+edge_count: 7498
+avg_cluster: 0.015122772337480349
+avg_degree: 14.996
+density: 0.015011011011011011
+
+gnp_p0.025
+node_count: 1000
+edge_count: 12621
+avg_cluster: 0.02511370180884201
+avg_degree: 25.242
+density: 0.025267267267267267
+
+gnp_p0.035
+node_count: 1000
+edge_count: 17683
+avg_cluster: 0.0350329145047891
+avg_degree: 35.366
+density: 0.035401401401401404
