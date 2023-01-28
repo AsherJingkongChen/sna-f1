@@ -57,41 +57,21 @@ density: 0.0004066878203117068
 ws_graph_k15
 node_count: 2500
 edge_count: 17500
-avg_cluster: 0.5044508144693279
+avg_cluster: 0.23931522342466696
 avg_degree: 14.0
 density: 0.0056022408963585435
 
 ws_graph_k25
 node_count: 2500
 edge_count: 30000
-avg_cluster: 0.52516035635398
+avg_cluster: 0.2503860012627225
 avg_degree: 24.0
 density: 0.009603841536614645
 
 ws_graph_k35
 node_count: 1000
 edge_count: 17000
-avg_cluster: 0.529942532347451
+avg_cluster: 0.2629787800476354
 avg_degree: 34.0
 density: 0.03403403403403404
 
-gnp_p0.015
-node_count: 1000
-edge_count: 7498
-avg_cluster: 0.015122772337480349
-avg_degree: 14.996
-density: 0.015011011011011011
-
-gnp_p0.025
-node_count: 1000
-edge_count: 12621
-avg_cluster: 0.02511370180884201
-avg_degree: 25.242
-density: 0.025267267267267267
-
-gnp_p0.035
-node_count: 1000
-edge_count: 17683
-avg_cluster: 0.0350329145047891
-avg_degree: 35.366
-density: 0.035401401401401404

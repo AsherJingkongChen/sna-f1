@@ -44,13 +44,13 @@ D = {
   #     [['id_1', 'id_2']].to_numpy(),
 
   # 'ws_graph_k15':
-  #   nx.watts_strogatz_graph(n=2500, k=15, p=0.1, seed=255).edges,
+  #   nx.watts_strogatz_graph(n=2500, k=15, p=0.3, seed=255).edges,
   
   # 'ws_graph_k25':
-  #   nx.watts_strogatz_graph(n=2500, k=25, p=0.1, seed=255).edges,
+  #   nx.watts_strogatz_graph(n=2500, k=25, p=0.3, seed=255).edges,
   
   # 'ws_graph_k35':
-  #   nx.watts_strogatz_graph(n=1000, k=35, p=0.1, seed=255).edges
+  #   nx.watts_strogatz_graph(n=1000, k=35, p=0.3, seed=255).edges
 }
 
 # for subject, data in D.items():

@@ -19,3 +19,4 @@ def stats(subject, data):
         }.items()
     ])
   )
+  print()

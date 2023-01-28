@@ -126,7 +126,7 @@ def output_ws_heatmap_csv():
 
     # build graph
     #
-    G = nx.watts_strogatz_graph(n=1000, k=k, p=0.1, seed=255)
+    G = nx.watts_strogatz_graph(n=1000, k=k, p=0.3, seed=255)
     Y = []
 
     for infection_th in D['X']:
